@@ -1,4 +1,5 @@
 const path = require("path");
+const FaviconsWebpackPlugin = require("favicons-webpack-plugin");
 
 module.exports = {
   entry: "./src/index.js",
@@ -28,4 +29,10 @@ module.exports = {
       },
     ],
   },
+  plugins: [
+    new FaviconsWebpackPlugin({
+      logo: "./src/images/cucina-italiana.png",
+      outputPath: "assets/favicons",
+    }),
+  ],
 };

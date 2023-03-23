@@ -18,6 +18,7 @@
   "homepage": "https://github.com/Martin853/TOD-Restaurant-Page#readme",
   "devDependencies": {
     "css-loader": "^6.7.3",
+    "favicons-webpack-plugin": "^6.0.0",
     "file-loader": "^6.2.0",
     "style-loader": "^3.3.2",
     "webpack": "^5.76.2",
