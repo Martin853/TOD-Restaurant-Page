@@ -2,17 +2,23 @@
 
 import "./styles/main.css";
 import home from "./home";
+import menu from "./menu";
 
 // Variables
 
 const homeButton = document.querySelector("#home");
-const menuButton = document.querySelector("menu");
-const contanctButton = document.querySelector("contact");
+const menuButton = document.querySelector("#menu");
+const contactButton = document.querySelector("#contact");
 
 // Remove Content
 
 function removeContent() {
-  const content = document.querySelector("#content-holder").children;
+  // Set default body heigt
+
+  document.body.style.height = "150vh";
+
+  const contentHolder = document.querySelector("#content-holder");
+  const content = Array.from(contentHolder.children);
 
   content.forEach((element) => {
     element.remove();
@@ -30,11 +36,10 @@ homeButton.addEventListener("click", function () {
 
 // Menu
 
-menuButton.addEventListener("click", function () {});
-
-// Contact
-
-contactButton.addEventListener("click", function () {});
+menuButton.addEventListener("click", function () {
+  removeContent();
+  menu();
+});
 
 // Initialize the site function
 
