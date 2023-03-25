@@ -37,7 +37,10 @@ header h1 {
 header ul {
   padding: 0;
   display: flex;
-  gap: 2rem;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
   list-style: none;
 }
 
@@ -56,6 +59,14 @@ header li {
 header li:hover {
   background-color: #2e7c79;
   cursor: pointer;
+}
+
+/* Nav */
+
+nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 /* Content Section */
@@ -110,6 +121,7 @@ header li:hover {
 }
 
 .menu-text {
+  text-align: center;
   color: #333;
   font-size: 24px;
 }
@@ -137,4 +149,48 @@ header li:hover {
   height: 180px;
   border: 2px solid #333;
   border-radius: 5px;
+}
+
+/* Logo */
+
+#logo {
+  margin-top: 16px;
+}
+
+/* Home Text */
+
+#home-text {
+  text-align: start;
+}
+
+@media all and (max-width: 425px) {
+  #content-holder {
+    width: 75%;
+  }
+}
+
+@media all and (max-width: 720px) {
+  #logo {
+    width: 150px !important;
+    height: 150px !important;
+  }
+
+  #home-text {
+    font-size: 16px !important;
+  }
+}
+
+@media all and (max-width: 1024px) {
+  body {
+    height: 380vh !important;
+  }
+
+  .menu-div-holder {
+    flex-direction: column !important;
+  }
+
+  .menu-image {
+    width: 200px;
+    height: 130px;
+  }
 }
