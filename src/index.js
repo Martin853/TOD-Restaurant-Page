@@ -3,6 +3,7 @@
 import "./styles/main.css";
 import home from "./home";
 import menu from "./menu";
+import contact from "./contact";
 
 // Variables
 
@@ -39,6 +40,13 @@ homeButton.addEventListener("click", function () {
 menuButton.addEventListener("click", function () {
   removeContent();
   menu();
+});
+
+// Contact
+
+contactButton.addEventListener("click", function () {
+  removeContent();
+  contact();
 });
 
 // Initialize the site function
