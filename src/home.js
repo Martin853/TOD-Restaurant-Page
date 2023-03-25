@@ -1,4 +1,5 @@
 import imageSource from "../src/images/cucina-italiana.png";
+import bgImage from "../src/images/home-background.jpg";
 
 const contentHolder = document.querySelector("#content-holder");
 
@@ -6,7 +7,7 @@ function home() {
   // Background image setting
 
   const body = document.getElementsByTagName("body")[0];
-  body.style.backgroundImage = "url(../src/images/home-background.jpg)";
+  body.style.backgroundImage = `url(${bgImage})`;
   body.style.backgroundSize = "cover";
   body.style.backgroundPosition = "center";
   body.style.backgroundRepeat = "no-repeat";
